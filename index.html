@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tabcontent tab__welcome-page" id="defaultOpen">
+      <div class="welcome-page__text">
+        <h1>Choose The Doctor You Want</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button class="welcome-page__button">Get Started</button>
+      </div>
+      <div>
+        <embed
+          class="welcome-page__image"
+          src="./img/welcome-img.svg"
+          alt="welcomeImage"
+        />
+      </div>
+    </div>
+
+    <!-- HERE STARTS THE FIND DOCTOR TAB -->
+
+    <div class="tab__find-doctor">
+      <nav class="find-doctor_nav">
+        <div class="find-doctor_hambuerger">
+          <embed src="./img/menu-bar.svg" type="" />
+        </div>
+        <div class="find-doctor_profile">
+          <embed src="./img/profile.svg" type="" />
+        </div>
+      </nav>
+      <div class="find-doctor__text">
+        <h1>
+          Find Your Desired <br />
+          Doctor
+        </h1>
+      </div>
+
+      <div class="find-doctor__search">
+        <input
+          class="find-doctor__search__input"
+          id="search"
+          type="text"
+          placeholder="search for doctors"
+        />
+        <button class="find-doctor__search__button"></button>
+      </div>
+
+      <div class="find-doctor__categories">
+        <h3 class="find-doctor-categories__text">Categories</h3>
+        <div class="find-doctor-categories__container">
+          <div class="find-doctor-categories__buttons">
+            <embed
+              class="find-doctor-categories__icons"
+              src="./img/tooth.svg"
+              alt=""
+            />
+            <div class="find-doctor-categories__text--desc">Dental Surgeon</div>
+          </div>
+          <div class="find-doctor-categories__buttons">
+            <embed
+              class="find-doctor-categories__icons"
+              src="./img/heart.svg"
+              alt=""
+            />
+            <div class="find-doctor-categories__text--desc">Heart Surgeon</div>
+          </div>
+          <div class="find-doctor-categories__buttons">
+            <embed
+              class="find-doctor-categories__icons"
+              src="./img/eye.svg"
+              alt=""
+            />
+            <div class="find-doctor-categories__text--desc">Eye Specialist</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="find-doctor-topdoctor__text">Top Doctors</h3>
+      <div id="find-doctor-topdoctor__container"></div>
+    </div>
+    <!-- HERE STARTS THE DETAIL DOCTOR PAGE -->
+    <div id="tab_doctor-detail">
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

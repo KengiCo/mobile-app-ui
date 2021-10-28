@@ -1,0 +1,330 @@
+@font-face {
+  font-family: circularBlack;
+  src: url(./font/CircularStdBlack.ttf);
+}
+@font-face {
+  font-family: circularBold;
+  src: url(./font/CircularStdBold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: circularBook;
+  src: url("font/Circular Std Book/@font-face/860c3ec7bbc5da3e97233ccecafe512e.ttf")
+    format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+:root {
+  --text: #1e1c61;
+  --accent: #ef716b;
+  --white: #f9f9f9;
+}
+
+body {
+  margin: 0px;
+  font-family: circularBook;
+  font-weight: 400;
+  display: flex;
+  background-color: var(--white);
+  color: var(--text);
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: circularBook;
+}
+.tab__welcome-page {
+  margin-top: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.welcome-page__button {
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+}
+.welcome-page__text {
+  margin: 0px 15vw;
+}
+
+.tab__find-doctor {
+  margin-top: 10vh;
+  display: none;
+}
+
+.find-doctor_nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 93vw;
+  background-color: rgba(53, 123, 155, 0.337);
+  margin: auto;
+}
+
+.find-doctor__text {
+  margin-top: 48px;
+  font-family: circularBook;
+  display: flex;
+  justify-content: start;
+  margin-left: 25px;
+}
+
+.find-doctor__search {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  margin-top: 19px;
+  margin-right: 28px;
+  margin-left: 25px;
+}
+
+.find-doctor__search__input {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  width: 45vw;
+  padding: 19px 220px 19px 15px;
+  border: none;
+  margin-bottom: 0px;
+  position: relative;
+}
+.find-doctor__search__input::placeholder {
+  color: #c0c0c0;
+  font-size: 16px;
+  font-family: circularBook;
+}
+.find-doctor__search__button {
+  padding: 26.5px 37.5px;
+  background-color: var(--accent);
+  background-image: url(./img/search-lens.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.find-doctor-categories__text {
+  margin-left: 10px;
+  margin-top: 25px;
+  font-weight: 700px;
+  font-size: 16px;
+}
+
+.find-doctor-categories__container {
+  position: relative;
+  display: flex;
+  margin-left: 5px;
+  margin-top: 50px;
+  width: 100vw;
+}
+
+.find-doctor-categories__buttons {
+  height: 137px;
+  width: 113px;
+  background: #ffffff;
+  box-shadow: 1px 6px 11px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  margin: 5px 15px;
+}
+.find-doctor-categories__text--desc {
+  font-family: circularBook;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 20px;
+  margin-left: 29px;
+  margin-bottom: 26px;
+}
+.find-doctor-categories__icons {
+  margin-left: 37px;
+  margin-top: -14px;
+}
+
+.find-doctor-topdoctor {
+  display: flex;
+  margin-top: 25px;
+}
+
+.find-doctor-topdoctor__text {
+  font-family: circularBlack;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 25px;
+  font-weight: 700px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.find-doctor_list {
+  list-style: none;
+  margin: 0 2rem;
+  padding: 0px;
+}
+.find-doctor_topdoctor__container {
+  display: block;
+}
+.find-doctor_doctor-box {
+  margin-top: 25px;
+  width: 92%;
+  height: 86px;
+  border-radius: 13px;
+  position: relative;
+  display: flex;
+}
+
+.find-doctor__doctor-image {
+  position: absolute;
+  display: inline-block;
+}
+.find-doctor__doctor-text {
+  position: absolute;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+}
+.boxes {
+  height: 87px;
+  width: 325px;
+  background-color: #edf1fa;
+  border-radius: 13px;
+  margin: 25px;
+  display: flex;
+}
+.doc_image {
+  margin: 11px 15px 10px 20px;
+  flex: 1;
+}
+.doc_title {
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 4;
+}
+.doc_title p {
+  margin: 0;  
+  padding: 0;
+}
+
+.find-doctor-categories__text--light {
+  font-family: circularBook;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1c61a6;
+  opacity: 0.65;
+}
+
+#tab_doctor-detail {
+  display: none;
+  background-image: url("./img/doc-detail-illustration.svg");
+  background-size: 100%;
+  width: 100vw;
+  height: 293px;
+}
+
+.doctor-detail_nav {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 85vw;
+}
+.doctor-detail__container {
+  margin-top: 194px;
+  width: 100vw;
+  height: 625px;
+  background: #F9F9F9;
+  box-shadow: 0px -2px 17px rgba(0, 0, 0, 0.04);
+  border-radius: 42px;
+}
+
+
+.doctor-detail__the-doctor {
+  display: flex;
+  margin-left:  25px;
+  padding-top: 25px;
+}
+
+
+  .doctor-detail__the-doctor__container {
+    height: 90px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 140px;
+    top: 290px;
+}
+
+.doctor-detail__text--bold {
+  font-family: circularBlack;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 700px;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.doctor-detail__text--light {
+  font-family: circularBook;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1c61a6;
+  opacity: 0.65;
+}
+
+.doctor-detail__contact-icons {
+  margin-top: 7px;
+}
+
+.doctor-detail__about {
+  margin: 37px 21px 0px 25px
+}
+
+.doctor-detail__about-title {
+  font-family: circularBlack;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 700px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.doctor-detail__about-text {
+  font-family: circularBook;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1c61a6;
+  opacity: 0.65;
+  
+}
