@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="main-container">
     <div class="tabcontent tab__welcome-page" id="defaultOpen">
       <div class="welcome-page__text">
         <h1>Choose The Doctor You Want</h1>
@@ -55,23 +56,23 @@
         <h3 class="find-doctor-categories__text">Categories</h3>
         <div class="find-doctor-categories__container">
           <div class="find-doctor-categories__buttons">
-            <embed
+            <img
               class="find-doctor-categories__icons"
               src="./img/tooth.svg"
               alt=""
             />
-            <div class="find-doctor-categories__text--desc">Dental Surgeon</div>
+            <div class="find-doctor-categories__text--desc tooth">Dental Surgeon</div>
           </div>
-          <div class="find-doctor-categories__buttons">
-            <embed
+          <div class="find-doctor-categories__buttons heart">
+            <img
               class="find-doctor-categories__icons"
               src="./img/heart.svg"
               alt=""
             />
             <div class="find-doctor-categories__text--desc">Heart Surgeon</div>
           </div>
-          <div class="find-doctor-categories__buttons">
-            <embed
+          <div class="find-doctor-categories__buttons eye">
+            <img
               class="find-doctor-categories__icons"
               src="./img/eye.svg"
               alt=""
@@ -88,6 +89,10 @@
     <div id="tab_doctor-detail">
 
     </div>
+  </div>
+    <script src="DoctorList.js"></script>
+    <script src="DoctorBox.js"></script>
+    <script src="Search.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

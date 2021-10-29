@@ -19,6 +19,8 @@
   --white: #f9f9f9;
 }
 
+
+
 body {
   margin: 0px;
   font-family: circularBook;
@@ -28,6 +30,11 @@ body {
   color: var(--text);
   align-items: center;
   justify-content: center;
+}
+
+.main-container{
+  max-width: 412px;
+  max-height: 812px;
 }
 
 p {
@@ -240,13 +247,22 @@ p {
   height: 293px;
 }
 
-.doctor-detail_nav {
-  margin: 30px;
+.doctor-detail__nav {
   display: flex;
   justify-content: space-between;
+  padding-left: 25px;
   position: relative;
   width: 85vw;
 }
+/* 
+.doctor-detail__back-arrow {
+  display: inline-block;
+}
+
+.doctor-detail__threedots {
+  display: inline-block;
+} */
+
 .doctor-detail__container {
   margin-top: 194px;
   width: 100vw;
