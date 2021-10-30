@@ -1,4 +1,9 @@
-class Search {
+import { doctorList } from "../main.js"
+const searchInput = document.getElementById("search");
+const startSearch = document.querySelector(".find-doctor__search__button");
+
+
+export default class Search {
     static searchByName() {
       let searchString = "";
       searchInput.addEventListener("input", () => {

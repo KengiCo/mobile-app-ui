@@ -1,18 +1,18 @@
+const findDoctor = document.querySelector(".tab__find-doctor");
+
+
 // CLASS FOR THE DOCTOR DETAIL (SHOWS THE BOX AND ON CLICK OPEN DETAIL PAGE)
 
+export default class DoctorBox {
+  constructor(doctor) {
+    this.doctor = doctor;
+  }
 
-
-
-class DoctorBox {
-    constructor(doctor) {
-      this.doctor = doctor;
-    }
-  
-    showDoctor() {
-      const doctorDetailHook = document.getElementById("tab_doctor-detail");
-      findDoctor.style.display = "none";
-      doctorDetailHook.style.display = "block";
-      doctorDetailHook.innerHTML = `
+  showDoctor() {
+    const doctorDetailHook = document.getElementById("tab_doctor-detail");
+    findDoctor.style.display = "none";
+    doctorDetailHook.style.display = "block";
+    doctorDetailHook.innerHTML = `
           <nav class="doctor-detail__nav">
 
             <img class="doctor-detail__back-arrow" src="./img/back-arrow.svg" type="" />
@@ -42,17 +42,17 @@ class DoctorBox {
         </div>
         </div>
           `;
-          const backArrow = document.querySelector(".doctor-detail__back-arrow")
-          backArrow.addEventListener("click", () =>{
-            findDoctor.style.display = "block";
-            doctorDetailHook.style.display = "none";
-          })
-    }
-  
-    render() {
-      const docBox = document.createElement("div");
-      docBox.className = "find-doctor_doctor-box";
-      docBox.innerHTML = `
+    const backArrow = document.querySelector(".doctor-detail__back-arrow");
+    backArrow.addEventListener("click", () => {
+      findDoctor.style.display = "block";
+      doctorDetailHook.style.display = "none";
+    });
+  }
+
+  render() {
+    const docBox = document.createElement("div");
+    docBox.className = "find-doctor_doctor-box";
+    docBox.innerHTML = `
           <div style="background-color: ${this.doctor.backgroundColor}" class="boxes">
           <div class="doc_image">
             <img src="${this.doctor.iconURL}" alt="doctor_icon">
@@ -63,8 +63,8 @@ class DoctorBox {
           </div>
       </div>
           `;
-      const docDetails = docBox.querySelector("div");
-      docDetails.addEventListener("click", this.showDoctor.bind(this));
-      return docBox;
-    }
+    const docDetails = docBox.querySelector("div");
+    docDetails.addEventListener("click", this.showDoctor.bind(this));
+    return docBox;
   }
+}

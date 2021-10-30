@@ -45,9 +45,8 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .tabcontent {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
@@ -58,6 +57,12 @@ p {
   border: none;
   border-radius: 30px;
 }
+
+.welcome-page__img{
+  margin:0;
+  padding: 0;
+}
+
 .welcome-page__text {
   margin: 0px 15vw;
 }
