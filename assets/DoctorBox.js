@@ -42,6 +42,7 @@ export default class DoctorBox {
         </div>
         </div>
           `;
+    scroll(0,0)
     const backArrow = document.querySelector(".doctor-detail__back-arrow");
     backArrow.addEventListener("click", () => {
       findDoctor.style.display = "block";
