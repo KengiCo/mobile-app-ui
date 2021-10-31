@@ -10,5 +10,5 @@ Requirements:
 - Each Category should filter the doctors
 - By clicking on a Doctor name, the user should  see the details
 - Test the layout on a real mobile device (check Browsersync for this) 
-- Deploy the project towards Netlify (www.netlify.com) connected to your GitHub Repo
+- Deploy the project towards Netlify (www.netlify.com) connected to your GitHub Repo ( https://upbeat-allen-8c8900.netlify.app/ )
 - After the project is deployed, analyze it with https://web.dev
