@@ -75,10 +75,9 @@ p {
 
 .find-doctor_nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
-  width: 93vw;
-  margin: auto;
+  width: auto;
 }
 
 .find-doctor__text {
@@ -86,15 +85,16 @@ p {
   font-family: circularBook;
   display: flex;
   justify-content: start;
-  margin-left: 10vw;
+  margin-left: 15vw;
+  width: auto;
 }
 
 .find-doctor__search {
   display: flex;
   align-items: baseline;
   justify-content: end;
-  margin-right: 28px;
-  margin-left: 25px;
+  margin-right: 20vw;
+  width: auto;
 }
 
 .find-doctor__search__input {
@@ -128,7 +128,7 @@ p {
 }
 
 .find-doctor-categories__text {
-  margin-left: 10vw;
+  margin-left: 15vw;
   margin-top: 25px;
   font-weight: 700px;
   font-size: 16px;
@@ -142,8 +142,9 @@ p {
 }
 .find-doctor-categories {
   display: flex;
-  width: 100vw;
   flex-direction: row;
+  overflow-y: scroll;
+  padding: 20px 0;
 }
 
 .find-doctor-categories__buttons {
@@ -153,6 +154,7 @@ p {
   box-shadow: 1px 6px 11px rgba(0, 0, 0, 0.03);
   border-radius: 15px;
   margin: 5px 15px;
+  
 }
 .find-doctor-categories__text--desc {
   font-family: circularBook;
@@ -265,6 +267,7 @@ p {
   padding-left: 25px;
   position: relative;
   width: 85vw;
+  margin: auto;
 }
 /* 
 .doctor-detail__back-arrow {

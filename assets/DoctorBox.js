@@ -23,7 +23,7 @@ export default class DoctorBox {
         </nav>
         <div class="doctor-detail__container">
           <div class="doctor-detail__the-doctor">
-            <img src="${this.doctor.iconURL}" width="88" height="107" alt="" />
+            <img style="display:inline-block" src="${this.doctor.iconURL}" width="88" height="107" alt="" />
             <div class="doctor-detail__the-doctor__container">
               <div class="doctor-detail__text--bold">${this.doctor.name}</div>
               <div class="doctor-detail__text--light">${this.doctor.specialization} - ${this.doctor.hospital}</div>
