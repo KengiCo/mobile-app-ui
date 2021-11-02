@@ -19,23 +19,28 @@
   --white: #f9f9f9;
 }
 
+*{
 
-
-body {
-  max-width: 100vw;
-  margin: 0px;
+  box-sizing: border-box;
   font-family: circularBook;
   font-weight: 400;
-  display: flex;
-  background-color: var(--white);
   color: var(--text);
-  align-items: center;
-  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 812px;
+  width:100%;
+
 }
 
 .main-container{
   max-width: 412px;
   max-height: 812px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -45,6 +50,11 @@ p {
   margin-top: 10vh;
   align-items: center;
   justify-content: center;
+  background-image: url(./img/welcome-img.svg);
+  background-position-y:bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 812px;
 }
 
 .tabcontent {
@@ -65,19 +75,20 @@ p {
 }
 
 .welcome-page__text {
-  margin: 0px 15vw;
+  margin-top: 140px;
+  margin-left:41px;
 }
 
 .tab__find-doctor {
-  margin-top: 10vh;
   display: none;
 }
 
 .find-doctor_nav {
   display: flex;
-  justify-content: space-around;
-  position: relative;
-  width: auto;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 15vh;
+  padding: 0 4em;
 }
 
 .find-doctor__text {
@@ -90,24 +101,21 @@ p {
 }
 
 .find-doctor__search {
-  display: flex;
-  align-items: baseline;
-  justify-content: end;
-  margin-right: 20vw;
-  width: auto;
+  display: relative;
+  width: 100vw;
 }
 
 .find-doctor__search__input {
   height: 45px;
   border-radius: 73px;
-  margin-left: 7vw;
-  padding-left: 20px;
   background-color: #f2f2f2;
   width: 80%;
   /* padding: 19px 220px 19px 15px; */
   border: none;
+  padding-left: 20px;
   margin-bottom: 0px;
   position: relative;
+  margin-left: 10%;
 }
 .find-doctor__search__input::placeholder {
   color: #c0c0c0;
@@ -124,7 +132,7 @@ p {
   border: none;
   border-radius: 30px;
   position: absolute;
-  
+  right: 60px;
 }
 
 .find-doctor-categories__text {
@@ -268,15 +276,20 @@ p {
   position: relative;
   width: 85vw;
   margin: auto;
+  background-color: transparent;
 }
-/* 
+
 .doctor-detail__back-arrow {
   display: inline-block;
+  background-color: transparent;
+
 }
 
 .doctor-detail__threedots {
   display: inline-block;
-} */
+  background-color: transparent;
+
+}
 
 .doctor-detail__container {
   margin-top: 194px;
