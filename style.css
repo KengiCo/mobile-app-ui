@@ -153,10 +153,8 @@ p {
   margin-top: 50px;
   display: flex;
 }
-.find-doctor-categories {
+.find-doctor__categories {
   display: flex;
-  flex-direction: row;
-  overflow-y: scroll;
   padding: 20px 0;
 }
 
@@ -167,8 +165,8 @@ p {
   box-shadow: 1px 6px 11px rgba(0, 0, 0, 0.03);
   border-radius: 15px;
   margin: 5px 15px;
-  
 }
+
 .find-doctor-categories__text--desc {
   font-family: circularBook;
   font-size: 16px;
@@ -181,6 +179,37 @@ p {
   margin-left: 37px;
   margin-top: -14px;
 }
+
+@media (max-width:374px) {
+
+  .find-doctor-categories__container {
+    position: relative;
+    display: flex;
+    }
+  .find-doctor__categories {
+    padding: 20px 10px;
+  }
+  
+  .find-doctor-categories__buttons {
+    height: 110px;
+    width: 91px;
+    margin: 5px 15px 0 25px;
+  }
+  
+  .find-doctor-categories__text--desc {
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+  }
+  .find-doctor-categories__icons {
+    position: relative;
+    top:-10px;
+    right: 20px;;
+    width: 90px;
+    height: 90px;
+  }
+}
+
 
 .find-doctor-topdoctor {
   display: flex;
