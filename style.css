@@ -53,7 +53,7 @@ p {
   background-image: url(./img/welcome-img.svg);
   background-position-y:bottom;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   height: 812px;
 }
 
@@ -83,12 +83,18 @@ p {
   display: none;
 }
 
-.find-doctor_nav {
+.find-doctor__nav {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  margin-top: 15vh;
+  align-items: center;
+  margin-top: 8em;
   padding: 0 4em;
+}
+
+.find-doctor__hamburger,
+.find-doctor__profile {
+  vertical-align:auto;
+  display: inline-block;
 }
 
 .find-doctor__text {
@@ -102,20 +108,19 @@ p {
 
 .find-doctor__search {
   display: relative;
-  width: 100vw;
+  width:90%;
 }
 
 .find-doctor__search__input {
   height: 45px;
   border-radius: 73px;
   background-color: #f2f2f2;
-  width: 80%;
-  /* padding: 19px 220px 19px 15px; */
+  width: 80vw;
   border: none;
   padding-left: 20px;
   margin-bottom: 0px;
   position: relative;
-  margin-left: 10%;
+  margin-left: 4em;
 }
 .find-doctor__search__input::placeholder {
   color: #c0c0c0;
@@ -132,7 +137,7 @@ p {
   border: none;
   border-radius: 30px;
   position: absolute;
-  right: 60px;
+  right: 3em;
 }
 
 .find-doctor-categories__text {
@@ -265,30 +270,24 @@ p {
   display: none;
   background-image: url("./img/doc-detail-illustration.svg");
   background-size: 100%;
-  width: 100vw;
-  height: 293px;
+  height: 20em;
 }
 
 .doctor-detail__nav {
   display: flex;
   justify-content: space-between;
-  padding-left: 25px;
+  padding:1.8em 1.5em;
   position: relative;
-  width: 85vw;
-  margin: auto;
+
   background-color: transparent;
 }
 
 .doctor-detail__back-arrow {
   display: inline-block;
-  background-color: transparent;
-
 }
 
 .doctor-detail__threedots {
   display: inline-block;
-  background-color: transparent;
-
 }
 
 .doctor-detail__container {
